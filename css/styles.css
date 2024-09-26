@@ -315,7 +315,7 @@ p {
 }
 
 #photos1 .photo1 {
-    height: 100%;
+    width: 50%;
     aspect-ratio: 1/1;
     background-image: url(https://ableton-production.imgix.net/about/photo-1.jpg?dpr=2&fit=crop&h=667&ixjsv=1.1.3&q=50&w=667);
     background-repeat: no-repeat;
@@ -325,7 +325,7 @@ p {
 
 #photos1 .photo2 {
     aspect-ratio: 4/3;
-    height: 25rem;
+    width: 40%;
     background-image: url(https://ableton-production.imgix.net/about/photo-2.jpg?dpr=2&fit=crop&h=400&ixjsv=1.1.3&q=50&w=533);
     background-size: cover;
     background-repeat: no-repeat;
@@ -380,4 +380,180 @@ p {
     max-width: max-content;
     align-self: center;
     margin: 4rem 0;
+}
+
+#photos2 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    position: relative;
+    padding: 4rem 4.5rem;
+}
+
+#photos2 .photo1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4.5rem;
+    z-index: 1;
+    width: 50%;
+    max-height: 90vh;
+    overflow: hidden;
+}
+
+#photos2 .photo1 img {
+    width: 60%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+}
+
+#green-background {
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    background-color: var(--green);
+    left: 0;
+}
+
+#photos2 .photo2 {
+    aspect-ratio: 1/1;
+    background-image: url(https://ableton-production.imgix.net/about/photo-5.jpg?dpr=2&fit=crop&h=667&ixjsv=1.1.3&q=50&w=667);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    width: 50%;
+}
+
+#we-believe {
+    left: 50%;
+    right: 50%;
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    max-width: max-content;
+    align-self: center;
+    margin: 6rem 0 4rem;
+}
+
+#photos3 {
+    height: 60vh;
+    margin: 4rem 4.5rem;
+    background-image: url(https://ableton-production.imgix.net/about/poster-meet-the-makers.jpg?auto=format&dpr=2&fit=crop&fm=jpg&ixjsv=1.1.3&q=50&w=1333);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+#passionate {
+    left: 50%;
+    right: 50%;
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    max-width: max-content;
+    align-self: center;
+    margin: 6rem 0 4rem;
+}
+
+#photos4 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 4rem 4.5rem;
+}
+
+#purple-background {
+    background-color: var(--purple);
+    width: 75%;
+    height: 90vh;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    top: 0;
+    transform: translate(-50%, 0);
+}
+
+#photos4 .photo1 {
+    aspect-ratio: 4/3;
+    width: 40%;
+    background-image: url(https://ableton-production.imgix.net/about/photo-6-a.jpg?dpr=2&fit=crop&h=400&ixjsv=1.1.3&q=50&w=533);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+#photos4 .photo2 {
+    aspect-ratio: 1/1;
+    height: 75%;
+    background-image: url(https://ableton-production.imgix.net/about/photo-7.jpg?dpr=2&fit=crop&h=667&ixjsv=1.1.3&q=50&w=667);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+#we-want {
+    left: 50%;
+    right: 50%;
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    max-width: max-content;
+    align-self: center;
+    margin: 6rem 0 4rem;
+}
+
+#we-proud {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 8rem;
+    height: 75vh;
+}
+
+#proud-photo {
+    background-image: url(https://ableton-production.imgix.net/about/photo-8.jpg?crop=right&dpr=2&fit=crop&h=667&ixjsv=1.1.3&q=50&w=667);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    aspect-ratio: 1/1;
+}
+
+#proud-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    height: 100%;
+    width: 50%;
+    padding: 8rem;
+    background-color: var(--light-blue);
+    justify-content: center;
+}
+
+#proud-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#proud-link a {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--navy-blue);
 }
